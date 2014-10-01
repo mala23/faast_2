@@ -3,14 +3,16 @@ require 'station'
 describe Station do
 
 	let(:station) { Station.new }
-	let(:passenger) { double :passenger }
+	let(:passenger) { double :passengers }
 	
-	it "should have a train" do
-		expect(station.trains.count).to eq(1)
+	it "should be able to hold a train on initialization" do
+		chur_bhf = Station.new
+		expect(station.trains.count).to eq(0)
 	end
 
-	it "should have a passenger" do
-		expect(station.passengers.count).to eq(1)
+	it "should be able to hold a passenger on initialization" do
+		chur_bhf = .new
+		expect(station.trains.count).to eq(0)
 	end
 
 end

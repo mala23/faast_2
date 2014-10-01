@@ -1,8 +1,8 @@
 class Station
 
 	def initialize
-		@trains = [:bernina_express]
-		@passengers = [:natchosita]
+		@trains = []
+		@passengers = []
 	end
 
 	def trains
